@@ -1,0 +1,1 @@
+ssh -l root 10.220.12.122 route | grep eth1

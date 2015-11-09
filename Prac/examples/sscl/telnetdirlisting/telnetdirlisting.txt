@@ -1,0 +1,12 @@
+/**
+ * Connects to a Telnet server, sends ls -al command and disconnects
+ */
+
+prompt hostname "Enter hostname: "
+prompt username "Enter username: "
+prompt password "Enter password: "
+connect
+send "ls -al"
+sendnowait "exit"
+wait 3
+disconnect

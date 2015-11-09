@@ -1,0 +1,16 @@
+/**
+ * Connects to a SSH server, sends "ls -al ${filter}" command to get directory listing and disconnects.
+ *
+ * The "filter" variable is a argument passed in on the command line in the run.bat and run.sh files.
+ * 
+ */
+
+prompt hostname "Enter SSH hostname: "
+prompt username "Enter SSH username: "
+prompt password "Enter SSH password: "
+set secure true
+connect
+send "ls -al ${filter}"
+sendnowait "exit"
+wait 3
+disconnect

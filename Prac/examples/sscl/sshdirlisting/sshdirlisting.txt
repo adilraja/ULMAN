@@ -1,0 +1,13 @@
+/**
+ * Connects to a SSH server, sends "ls -al" command to get directory listing and disconnects
+ */
+
+prompt hostname "Enter SSH hostname: "
+prompt username "Enter SSH username: "
+prompt password "Enter SSH password: "
+set secure true
+connect
+send "ls -al"
+sendnowait "exit"
+wait 3
+disconnect

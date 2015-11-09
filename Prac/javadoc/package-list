@@ -1,0 +1,8 @@
+com.jscape.inet.ipclient
+com.jscape.inet.ipclientssh
+com.jscape.inet.ssh
+com.jscape.inet.ssh.protocol.v2.authentication
+com.jscape.inet.ssh.protocol.v2.marshaling.algorithms
+com.jscape.inet.ssh.protocol.v2.transport.keyexchange
+com.jscape.inet.ssh.util
+com.jscape.util
